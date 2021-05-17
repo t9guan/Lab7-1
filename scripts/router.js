@@ -37,7 +37,7 @@ router.setState = function(state, num) {
    */
 
   if(state == 'home'){
-    history.pushState({'page_id': 1}, document.title, '');
+    history.pushState({'page_id': 0}, document.title, '#');
     //history.back();
   }else if(state == 'settings'){
     history.pushState({'page_id': 0}, document.title, '#settings');
