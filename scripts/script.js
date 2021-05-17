@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('https://cse110lab6.herokuapp.com/entries')
     .then(response => response.json())
     .then(entries => {
-      let i = 1;
+      var i = 1;
       entries.forEach(entry => {
         let newPost = document.createElement('journal-entry');
         newPost.entry = entry;
